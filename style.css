@@ -1,0 +1,101 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin: 8px;
+  padding: 0;
+}
+
+#header-img {
+  width: 50%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  padding-right: 20px;
+  padding-top: 25px;
+}
+
+.nav-bar li {
+  display: inline-block;
+  padding: 15px 20px;
+  justify-content: center;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Lato';
+}
+
+header {
+  border-bottom: solid 1px black;
+  background-color: sandybrown;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+  color:rgb(211, 167, 167);
+  transition: background-color 0.5s ease;
+}
+
+.main-container {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto 1fr auto;
+  background-color: linear-gradient(red, yellow);
+  grid-template-areas:
+  "video"
+  "form"
+  "footer"
+}
+
+.video {
+  padding-top: 50px;
+  justify-self: center;
+}
+
+.footer {
+  display: grid;
+  max-height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: solid 1px black;
+  background-color: rgb(211, 167, 167);
+  align-self: end;
+  font-size: 22px;
+  font-weight: lighter;
+}
+.about {
+  display: grid;
+  justify-self: center;
+  align-self: end;
+}
+
+.services {
+  display: grid;
+  justify-self: center;
+  align-self: end;
+}
+
+.contact {
+  display: grid;
+  justify-self: center;
+  align-self: end;
+}
+
+#form {
+  grid-area: form;
+  justify-self: center;
+}
+
+.form-submit {
+  grid-area: form;
+  padding: 5px 0 0 80px;
+}
